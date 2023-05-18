@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Nouvelle enquete"
+        android:textColor="@color/blackRaisin"
+        android:textSize="30sp"
+        android:typeface="serif" />
+
+
+    <EditText
+        android:id="@+id/editTextTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawable="@drawable/edittext_border_bottom"
+        android:backgroundTint="@color/blackRaisin"
+        android:hint="Titre"
+        android:paddingVertical="15dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/blackRaisin"
+        android:gravity="top"
+        android:hint="Description"
+        android:fitsSystemWindows="true"
+        android:breakStrategy="balanced"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:padding="5dp" />
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawable="@drawable/edittext_border_bottom"
+        android:backgroundTint="@color/blackRaisin"
+        android:paddingVertical="15dp"
+        android:hint="Date"
+        android:inputType="date" />
+    <EditText
+        android:id="@+id/editTextLieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp"
+        android:drawable="@drawable/edittext_border_bottom"
+        android:backgroundTint="@color/blackRaisin"
+        android:hint="Lieu"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnEnregistrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/blackRaisin"
+        android:elevation="4dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:layout_marginTop="25dp"
+        android:text="Enregistrer"
+        android:textColor="#fff" />
+</LinearLayout>

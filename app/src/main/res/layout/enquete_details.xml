@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewEntete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/title_border"
+        android:text="Information de l'enquete"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="33dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewLabelTitre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titre: "
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/textViewTitre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vol a q2"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="33dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewLabelLieu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lieu: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewLieu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="Quartier 2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="33dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewLabelDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: "
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10/04/2023"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="33dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewLabelEtat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Etat: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewEtat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="Non résolu" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="33dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewLabelDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="top|left"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/title_border"
+                android:inputType="text|textMultiLine"
+                android:text="Non résolu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnVoirPreuves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:drawableStart="@drawable/baseline_remove_red_eye_24"
+                android:text="Preuves"/>
+            <Button
+                android:id="@+id/btnVoirSuspects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:text="Suspects"/>
+            <Button
+                android:id="@+id/btnVoirVictimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:text="Victimes"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/add_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/blackRaisin"
+            app:icon="@drawable/baseline_add_24"
+            app:iconTint="@color/white"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_preuve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@android:color/white"
+            app:fabSize="mini"
+            android:layout_above="@+id/add_fab"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/baseline_add_a_photo_24" />
+        <TextView
+            android:id="@+id/add_preuve_action_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Nouvelle preuve"
+            android:layout_toStartOf="@+id/add_preuve"
+            android:layout_alignBaseline="@+id/add_suspect"
+            android:layout_marginBottom="25dp"
+            android:layout_above="@+id/add_fab"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_suspect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@android:color/white"
+            app:fabSize="mini"
+            android:layout_above="@+id/add_preuve"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/baseline_person_add_alt_1_24" />
+        <TextView
+            android:id="@+id/add_suspect_action_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Ajouter un suspect"
+            android:layout_toStartOf="@+id/add_suspect"
+            android:layout_alignBaseline="@+id/add_suspect"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/add_victime"
+            />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_victime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@android:color/white"
+            app:fabSize="mini"
+            android:layout_above="@+id/add_suspect"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/baseline_person_add_alt_1_24" />
+        <TextView
+            android:id="@+id/add_victime_action_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Ajouter une victime"
+            android:layout_marginBottom="15dp"
+            android:layout_toStartOf="@+id/add_victime"
+            android:layout_above="@+id/add_suspect"
+            />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

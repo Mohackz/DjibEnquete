@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Nouveau Preuve"
+        android:textColor="@color/blackRaisin"
+        android:textSize="30sp"
+        android:typeface="serif" />
+
+    <ImageButton
+        android:id="@+id/imageViewPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/baseline_add_photo_alternate_150"
+        android:contentDescription="Image" />
+
+
+    <EditText
+        android:id="@+id/editTextLieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawable="@drawable/edittext_border_bottom"
+        android:backgroundTint="@color/blackRaisin"
+        android:hint="Lieu"
+        android:paddingVertical="15dp"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnEnregistrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/blackRaisin"
+        android:elevation="4dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:layout_marginTop="25dp"
+        android:text="Enregistrer"
+        android:textColor="#fff" />
+    <Button
+        android:id="@+id/btnSupprimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:elevation="4dp"
+        android:visibility="invisible"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:layout_marginTop="25dp"
+        android:text="Supprimer" />
+</LinearLayout>

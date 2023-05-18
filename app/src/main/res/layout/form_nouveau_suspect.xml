@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Nouveau Suspect"
+        android:textColor="@color/blackRaisin"
+        android:textSize="30sp"
+        android:typeface="serif" />
+
+    <ImageButton
+        android:id="@+id/imageViewPhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@drawable/baseline_add_photo_alternate_150"
+        android:contentDescription="TODO" />
+
+
+    <EditText
+        android:id="@+id/editTextNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawable="@drawable/edittext_border_bottom"
+        android:backgroundTint="@color/blackRaisin"
+        android:hint="Nom"
+        android:paddingVertical="15dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/editTextPrenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawable="@drawable/edittext_border_bottom"
+        android:backgroundTint="@color/blackRaisin"
+        android:paddingVertical="15dp"
+        android:hint="Prenom"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/editTextAdresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp"
+        android:drawable="@drawable/edittext_border_bottom"
+        android:backgroundTint="@color/blackRaisin"
+        android:hint="Adresse"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/editTextDateNaissance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp"
+        android:drawable="@drawable/edittext_border_bottom"
+        android:backgroundTint="@color/blackRaisin"
+        android:hint="Date de naissance"
+        android:inputType="date" />
+    <EditText
+        android:id="@+id/editTextCni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp"
+        android:drawable="@drawable/edittext_border_bottom"
+        android:backgroundTint="@color/blackRaisin"
+        android:hint="CNI"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnEnregistrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/blackRaisin"
+        android:elevation="4dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:layout_marginTop="25dp"
+        android:text="Enregistrer"
+        android:textColor="#fff" />
+    <Button
+        android:id="@+id/btnSupprimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/blackRaisin"
+        android:elevation="4dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:layout_marginTop="25dp"
+        android:visibility="invisible"
+        android:text="Supprimer"
+        android:textColor="#fff" />
+</LinearLayout>
